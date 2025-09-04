@@ -1,0 +1,143 @@
+
+div#wholePageWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+div#wholePageWrapper div#contentWrapper{
+    padding: var(--space-100);
+}
+div#wholePageWrapper div#contentWrapper div#logoImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--space-100);
+}
+div#wholePageWrapper div#contentWrapper div#logoImg img{
+    width: 3.5rem;
+}
+div#wholePageWrapper div#contentWrapper h1{
+    font-size: clamp(1.4rem, 3vw, 2rem);text-align: center;
+}
+div#wholePageWrapper div#contentWrapper form{
+    width: 22rem;
+} 
+/* div#wholePageWrapper div#contentWrapper form div.formGroup{
+
+} 
+div#wholePageWrapper div#contentWrapper form div.formGroup label#emailLabel{
+
+} 
+div#wholePageWrapper div#contentWrapper form div.formGroup input#email{
+
+} 
+div#wholePageWrapper div#contentWrapper form div.formGroup label#passwordLabel{
+
+} 
+div#wholePageWrapper div#contentWrapper form div.formGroup input#password{
+
+}  */
+div#wholePageWrapper div#contentWrapper form p.error{
+    font-size: 14px;
+    color: rgb(224, 101, 101);
+} 
+/* div#wholePageWrapper div#contentWrapper form button[type="submit"]{
+
+} */
+
+div#wholePageWrapper div#contentWrapper div#orWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-100);
+    padding: var(--space-150) 0;
+}
+div#wholePageWrapper div#contentWrapper div#orWrapper div.line{
+    width: 40%;
+    height: 1px;
+    background-color: #a0a0a0;
+}
+div#wholePageWrapper div#contentWrapper div#orWrapper p{
+    font-size: 18px;
+    color: #1F2328;
+}
+div#wholePageWrapper div#contentWrapper button#signWithGoogleBtn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--space-200);
+    background-color: #f6f8fa;
+    color: #1F2328;
+}
+div#wholePageWrapper div#contentWrapper button#signWithGoogleBtn img{
+    width: 2rem;
+}
+
+div#wholePageWrapper div#contentWrapper div.switchSignIn-Up{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding-top: var(--space-150);
+} 
+div#wholePageWrapper div#contentWrapper div.switchSignIn-Up p{
+    color: #1F2328;
+} 
+div#wholePageWrapper div#contentWrapper div.switchSignIn-Up a{
+    color: #0969DA;
+} 
+
+
+/* Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  div#wholePageWrapper div#contentWrapper form {
+    width: 20rem;
+  }
+
+  div#wholePageWrapper div#contentWrapper h1 {
+    font-size: clamp(1.2rem, 4vw, 1.8rem);
+  }
+
+  div#wholePageWrapper div#contentWrapper button#signWithGoogleBtn img {
+    width: 1.5rem;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  div#wholePageWrapper {
+    padding: var(--space-200);
+  }
+
+  div#wholePageWrapper div#contentWrapper form {
+    width: 100%; /* take full width on small screens */
+  }
+
+  div#wholePageWrapper div#contentWrapper h1 {
+    font-size: clamp(1.1rem, 5vw, 1.5rem);
+    padding-bottom: var(--space-200);
+  }
+
+  div#wholePageWrapper div#contentWrapper div#orWrapper p {
+    font-size: 16px;
+  }
+
+  div#wholePageWrapper div#contentWrapper button#signWithGoogleBtn {
+    font-size: 14px;
+    padding: 0.6rem;
+  }
+
+  div#wholePageWrapper div#contentWrapper button#signWithGoogleBtn img {
+    width: 1.2rem;
+  }
+
+  div#wholePageWrapper div#contentWrapper div.switchSignIn-Up {
+    flex-direction: column;
+    gap: 3px;
+    text-align: center;
+  }
+}
+

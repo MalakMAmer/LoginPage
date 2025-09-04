@@ -1,0 +1,24 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f8fa;
+    width: 100%;
+    padding: var(--space-100);
+    position: fixed;
+    bottom: 0px;
+} 
+footer div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    min-width: 20rem;
+    font-size: 18px;
+} 
+footer a{
+    color: #6c757f;
+} 
+
+/* انا اتضريت هنا اخليها بال position */
+/*الي عنده طريقة تانية يبقى افضل علشان بتأثر مع بعض المقاسات في ال signUP*/
